@@ -1,10 +1,3 @@
-@tailwind utilities;
-
-.controls {
-  @apply fixed left-1/2 bottom-4 md:hidden;
-  transform: translateX(-50%);
-}
-
 .absolute-center {
   @apply absolute top-1/2 left-1/2;
   transform: translate(-50%, -50%);

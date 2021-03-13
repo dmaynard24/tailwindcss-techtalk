@@ -1,6 +1,7 @@
 import {FC, useState} from 'react';
 import './App.css';
-import NavButton from './NavButton';
+import ProgressBar from './components/ProgressBar/ProgressBar';
+import Controls from './components/Controls/Controls';
 import One from './slides/1';
 
 const App: FC<{}> = () => {
@@ -22,6 +23,8 @@ const App: FC<{}> = () => {
     }
   }
 
+  const getProgressWidthPercentage = () => `${currentSlideNum / slideCount * 100}%`;
+
   document.onkeyup = (e: KeyboardEvent) => {
     if (e.key === 'ArrowLeft' || e.key === 'Backspace') {
       goToPrevSlide();
@@ -32,22 +35,18 @@ const App: FC<{}> = () => {
 
   return (
     <div className="h-screen flex items-center">
+      <ProgressBar 
+        width={getProgressWidthPercentage()} />
+
       <div className="relative z-1 max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 text-gray-900">
         {currentSlideNum === 1 && <One />}
       </div>
-      <div className="controls">
-        <NavButton 
-          srText="Go to Previous Slide" 
-          pathD="M15 19l-7-7 7-7" 
-          onClick={goToPrevSlide}
-          className="mr-8"
-          isDisabled={isPrevDisabled()} />
-        <NavButton 
-          srText="Go to Next Slide" 
-          pathD="M9 5l7 7-7 7" 
-          onClick={goToNextSlide}
-          isDisabled={isNextDisabled()} />
-      </div>
+      
+      <Controls
+        onClickPrev={goToPrevSlide}
+        isPrevDisabled={isPrevDisabled()}
+        onClickNext={goToNextSlide}
+        isNextDisabled={isNextDisabled()} />
     </div>
   );
 }

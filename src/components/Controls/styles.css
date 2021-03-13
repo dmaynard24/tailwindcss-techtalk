@@ -1,0 +1,6 @@
+@tailwind utilities;
+
+.controls {
+  @apply fixed z-10 left-1/2 bottom-4 md:hidden;
+  transform: translateX(-50%);
+}
