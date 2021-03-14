@@ -1,0 +1,6 @@
+@media (min-width: 640px) {
+  .rounded-image {
+    width: 60px;
+    height: 60px;
+  }
+}

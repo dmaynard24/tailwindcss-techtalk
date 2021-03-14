@@ -1,10 +1,12 @@
-import {FC, useState} from 'react';
+import {useState} from 'react';
 import './App.css';
 import ProgressBar from './components/ProgressBar/ProgressBar';
 import Controls from './components/Controls/Controls';
 import One from './slides/1';
+import Two from './slides/2';
+import Three from './slides/3';
 
-const App: FC<{}> = () => {
+const App = () => {
   const [currentSlideNum, setCurrentSlideNum] = useState(1);
   const slideCount = 10; // TODO: update
 
@@ -28,20 +30,22 @@ const App: FC<{}> = () => {
   document.onkeyup = (e: KeyboardEvent) => {
     if (e.key === 'ArrowLeft' || e.key === 'Backspace') {
       goToPrevSlide();
-    } else if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') {
+    } else if (e.key === 'ArrowRight' || e.key === ' ') {
       goToNextSlide();
     }
   }
 
   return (
-    <div className="h-screen flex items-center">
+    <div className="min-h-screen flex items-center">
       <ProgressBar 
         width={getProgressWidthPercentage()} />
 
-      <div className="relative z-1 max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 text-gray-900">
+      <div className="relative z-1 w-full max-w-screen-lg xl:max-w-screen-xl mx-auto px-4">
         {currentSlideNum === 1 && <One />}
+        {currentSlideNum === 2 && <Two />}
+        {currentSlideNum === 3 && <Three />}
       </div>
-      
+
       <Controls
         onClickPrev={goToPrevSlide}
         isPrevDisabled={isPrevDisabled()}
