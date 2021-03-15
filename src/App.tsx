@@ -13,10 +13,11 @@ import Eight from './slides/8';
 import Nine from './slides/9';
 import Ten from './slides/10';
 import Eleven from './slides/11';
+import Twelve from './slides/12';
 
 const App = () => {
   const [currentSlideNum, setCurrentSlideNum] = useState(1);
-  const slideCount = 11; // TODO: update
+  const slideCount = 20; // TODO: update
 
   useEffect(() => {
     // scroll back to top on slide change (pretty much only applies to mobile)
@@ -65,6 +66,7 @@ const App = () => {
         {currentSlideNum === 9 && <Nine />}
         {currentSlideNum === 10 && <Ten />}
         {currentSlideNum === 11 && <Eleven />}
+        {currentSlideNum === 12 && <Twelve />}
       </div>
 
       <Controls

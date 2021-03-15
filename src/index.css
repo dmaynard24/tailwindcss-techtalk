@@ -12,16 +12,24 @@ body {
   overflow-y: auto;
 }
 
-h1, h2 {
-  @apply text-gray-900 text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight;
+h1, h2, h3 {
+  @apply text-gray-900 leading-none font-extrabold tracking-tight;
 }
 
 h1 {
   @apply mb-8 sm:mb-10;
 }
 
-h2 {
+h1, h2 {
+  @apply text-4xl sm:text-6xl lg:text-7xl;
+}
+
+h2, h3 {
   @apply mb-6 sm:mb-8;
+}
+
+h3 {
+  @apply text-3xl sm:text-4xl lg:text-5xl;
 }
 
 p {
@@ -35,4 +43,5 @@ a {
 
 pre {
   overflow: hidden !important;
+  margin: 0 !important;
 }

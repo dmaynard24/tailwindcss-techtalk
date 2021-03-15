@@ -1,0 +1,23 @@
+table th, table td {
+  @apply pl-2 py-2 lg:pl-6;
+}
+
+table th:first-of-type, table td:first-of-type {
+  @apply pl-0;
+}
+
+table th {
+  @apply align-bottom pt-0;
+}
+
+table tr {
+  @apply border-b border-gray-200;
+}
+
+table td {
+  @apply align-top;
+}
+
+table code {
+  @apply text-tailwind-blue;
+}
