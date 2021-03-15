@@ -7,7 +7,7 @@ table th:first-of-type, table td:first-of-type {
 }
 
 table th {
-  @apply align-bottom pt-0;
+  @apply align-bottom pt-0 font-extrabold text-gray-900;
 }
 
 table tr {

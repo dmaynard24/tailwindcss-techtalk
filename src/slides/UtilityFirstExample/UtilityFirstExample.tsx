@@ -1,9 +1,9 @@
 import {FC} from 'react';
 import Heading from '../../components/Heading/Heading';
 import Card from '../../components/Card/Card';
-import './styles.css';
+import './UtilityFirstExample.css';
 
-const Nine: FC = () => {
+const UtilityFirstExample: FC = () => {
   return (
     <div>
       <Heading text="Example for Comparison" size="h3" />
@@ -13,4 +13,4 @@ const Nine: FC = () => {
   )
 }
 
-export default Nine;
+export default UtilityFirstExample;

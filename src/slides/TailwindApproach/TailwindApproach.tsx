@@ -5,7 +5,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 // import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const Eleven: FC = () => {
+const TailwindApproach: FC = () => {
   const markup = `
   <div class="text-gray-900 border-gray-200 border rounded-md w-80 max-w-full">
     <img src="../../assets/garden.jpeg" class="w-full rounded-t-md" alt="Chihuly Garden and Glass During the Day" />
@@ -32,4 +32,4 @@ const Eleven: FC = () => {
   )
 }
 
-export default Eleven;
+export default TailwindApproach;

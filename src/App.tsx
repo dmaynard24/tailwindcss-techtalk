@@ -2,18 +2,18 @@ import {useState, useEffect} from 'react';
 import './App.css';
 import ProgressBar from './components/ProgressBar/ProgressBar';
 import Controls from './components/Controls/Controls';
-import One from './slides/1';
-import Two from './slides/2';
-import Three from './slides/3';
-import Four from './slides/4';
-import Five from './slides/5';
-import Six from './slides/6';
-import Seven from './slides/7';
-import Eight from './slides/8';
-import Nine from './slides/9';
-import Ten from './slides/10';
-import Eleven from './slides/11';
-import Twelve from './slides/12';
+import TitleScreen from './slides/TitleScreen/TitleScreen';
+import Outline from './slides/Outline/Outline';
+import Authors from './slides/Authors/Authors';
+import AdamWathan from './slides/AdamWathan/AdamWathan';
+import SteveSchoger from './slides/SteveSchoger/SteveSchoger';
+import RefactoringUI from './slides/RefactoringUI/RefactoringUI';
+import WhatIsTailwind from './slides/WhatIsTailwind/WhatIsTailwind';
+import UtilityFirst from './slides/UtilityFirst/UtilityFirst';
+import UtilityFirstExample from './slides/UtilityFirstExample/UtilityFirstExample';
+import BootstrapApproach from './slides/BootstrapApproach/BootstrapApproach';
+import TailwindApproach from './slides/TailwindApproach/TailwindApproach';
+import Responsive from './slides/Responsive/Responsive';
 
 const App = () => {
   const [currentSlideNum, setCurrentSlideNum] = useState(1);
@@ -55,18 +55,18 @@ const App = () => {
         width={getProgressWidthPercentage()} />
 
       <div className="container mx-auto py-24 px-4">
-        {currentSlideNum === 1 && <One />}
-        {currentSlideNum === 2 && <Two />}
-        {currentSlideNum === 3 && <Three />}
-        {currentSlideNum === 4 && <Four />}
-        {currentSlideNum === 5 && <Five />}
-        {currentSlideNum === 6 && <Six />}
-        {currentSlideNum === 7 && <Seven />}
-        {currentSlideNum === 8 && <Eight />}
-        {currentSlideNum === 9 && <Nine />}
-        {currentSlideNum === 10 && <Ten />}
-        {currentSlideNum === 11 && <Eleven />}
-        {currentSlideNum === 12 && <Twelve />}
+        {currentSlideNum === 1 && <TitleScreen />}
+        {currentSlideNum === 2 && <Outline />}
+        {currentSlideNum === 3 && <Authors />}
+        {currentSlideNum === 4 && <AdamWathan />}
+        {currentSlideNum === 5 && <SteveSchoger />}
+        {currentSlideNum === 6 && <RefactoringUI />}
+        {currentSlideNum === 7 && <WhatIsTailwind />}
+        {currentSlideNum === 8 && <UtilityFirst />}
+        {currentSlideNum === 9 && <UtilityFirstExample />}
+        {currentSlideNum === 10 && <BootstrapApproach />}
+        {currentSlideNum === 11 && <TailwindApproach />}
+        {currentSlideNum === 12 && <Responsive />}
       </div>
 
       <Controls

@@ -1,9 +1,9 @@
 import {FC} from 'react';
 import Heading from '../../components/Heading/Heading';
 import book from '../../assets/book-cover-sm.png';
-import './styles.css';
+import './RefactoringUI.css';
 
-const Six: FC = () => {
+const RefactoringUI: FC = () => {
   return (
     <div>
       <Heading text="Refactoring UI" size="h3" />
@@ -20,4 +20,4 @@ const Six: FC = () => {
   )
 }
 
-export default Six;
+export default RefactoringUI;

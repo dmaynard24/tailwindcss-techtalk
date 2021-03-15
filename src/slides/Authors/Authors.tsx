@@ -6,7 +6,7 @@ import steve from '../../assets/steve.jpg';
 import jon from '../../assets/jon.jpg';
 import david from '../../assets/david.jpeg';
 
-const Three: FC = () => {
+const Authors: FC = () => {
   return (
     <div>
       <Heading text="Authors" />
@@ -28,4 +28,4 @@ const Three: FC = () => {
   )
 }
 
-export default Three;
+export default Authors;

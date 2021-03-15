@@ -1,7 +1,7 @@
 import {FC} from 'react';
 import Heading from '../../components/Heading/Heading';
 
-const Seven: FC = () => {
+const WhatIsTailwindCSS: FC = () => {
   return (
     <div>
       <Heading text="What is TailwindCSS?" />
@@ -16,4 +16,4 @@ const Seven: FC = () => {
   )
 }
 
-export default Seven;
+export default WhatIsTailwindCSS;

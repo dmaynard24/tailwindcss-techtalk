@@ -3,7 +3,7 @@ import Author from '../../components/Author/Author';
 import Heading from '../../components/Heading/Heading';
 import adam from '../../assets/adam.jpeg';
 
-const Four: FC = () => {
+const AdamWathan: FC = () => {
   return (
     <div>
       <Heading text="About Adam Wathan" size="h3" />
@@ -15,4 +15,4 @@ const Four: FC = () => {
   )
 }
 
-export default Four;
+export default AdamWathan;

@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Heading from "../../components/Heading/Heading";
-import "./styles.css";
+import "./Responsive.css";
 
 const Twelve: FC = () => {
   return (

@@ -1,7 +1,7 @@
 import {FC} from 'react';
 import Heading from '../../components/Heading/Heading';
 
-const Two: FC = () => {
+const Outline: FC = () => {
   return (
     <div>
       <Heading text="Outline" />
@@ -17,4 +17,4 @@ const Two: FC = () => {
   )
 }
 
-export default Two;
+export default Outline;

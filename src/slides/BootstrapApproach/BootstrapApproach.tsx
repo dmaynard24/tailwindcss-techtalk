@@ -5,7 +5,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 // import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const Ten: FC = () => {
+const BootstrapApproach: FC = () => {
   const markup = `
   <div class="card">
     <img src="../../assets/garden.jpeg" class="card-img-top" alt="Chihuly Garden and Glass During the Day" />
@@ -32,4 +32,4 @@ const Ten: FC = () => {
   )
 }
 
-export default Ten;
+export default BootstrapApproach;

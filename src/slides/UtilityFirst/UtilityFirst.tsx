@@ -1,7 +1,7 @@
 import {FC} from 'react';
 import Heading from '../../components/Heading/Heading';
 
-const Eight: FC = () => {
+const UtilityFirst: FC = () => {
   return (
     <div>
       <Heading text="Utility-First" size="h3" />
@@ -11,4 +11,4 @@ const Eight: FC = () => {
   )
 }
 
-export default Eight;
+export default UtilityFirst;

@@ -3,7 +3,7 @@ import logo from '../../assets/icons/tailwind-logo-type.svg';
 import headshot from '../../assets/dave.jpg';
 import Author from '../../components/Author/Author';
 
-const One: FC = () => {
+const TitleScreen: FC = () => {
   return (
     <div>
       <img src={logo} alt="TailwindCSS Logo with Type" className="w-64" />
@@ -13,4 +13,4 @@ const One: FC = () => {
   )
 }
 
-export default One;
+export default TitleScreen;

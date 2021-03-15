@@ -3,7 +3,7 @@ import Author from '../../components/Author/Author';
 import Heading from '../../components/Heading/Heading';
 import steve from '../../assets/steve.jpg';
 
-const Five: FC = () => {
+const SteveSchoger: FC = () => {
   return (
     <div>
       <Heading text="About Steve Schoger" size="h3" />
@@ -13,4 +13,4 @@ const Five: FC = () => {
   )
 }
 
-export default Five;
+export default SteveSchoger;
