@@ -11,7 +11,7 @@ const Two: FC = () => {
         <li>Latest Features</li>
         <li>Optimization</li>
         <li>Conclusion</li>
-        <li>Demo</li>
+        <li>Playground</li>
       </ul>
     </div>
   )
