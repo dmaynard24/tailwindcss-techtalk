@@ -1,9 +1,10 @@
 import {FC} from 'react';
+import Heading from '../../components/Heading/Heading';
 
 const Two: FC = () => {
   return (
     <div>
-      <h2>Outline</h2>
+      <Heading text="Outline" />
       <ul className="list-disc pl-8">
         <li>Authors</li>
         <li>What is TailwindCSS?</li>

@@ -3,23 +3,33 @@
 @tailwind utilities;
 
 body {
-  @apply text-gray-500 text-lg sm:text-2xl;
+  @apply text-gray-500 font-medium text-lg sm:text-2xl;
   font-family: 'Inter',system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 h1, h2 {
-  @apply text-gray-900 text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight mb-8 sm:mb-10;
+  @apply text-gray-900 text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight;
+}
+
+h1 {
+  @apply mb-8 sm:mb-10;
+}
+
+h2 {
+  @apply mb-6 sm:mb-8;
 }
 
 p {
-  @apply sm:leading-10 font-medium;
+  @apply sm:leading-10;
 }
 
 a {
-  @apply text-sm text-cyan-600 hover:text-cyan-800;
+  @apply text-cyan-600 hover:text-cyan-800;
   box-shadow: inset 0 -0.125em 0 0 #fff, inset 0 -0.375em 0 0 rgb(165 243 252 / 40%);
 }
 

@@ -1,0 +1,12 @@
+.book-cover {
+  width: 200px;
+  margin-left: -27px;
+}
+
+@media (min-width: 1024px) {
+  .book-cover {
+    width: 100%;
+    max-width: 256px;
+    margin-left: 16px;
+  }
+}

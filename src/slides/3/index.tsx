@@ -1,5 +1,6 @@
 import {FC} from 'react';
 import Author from '../../components/Author/Author';
+import Heading from '../../components/Heading/Heading';
 import adam from '../../assets/adam.jpeg';
 import steve from '../../assets/steve.jpg';
 import jon from '../../assets/jon.jpg';
@@ -8,7 +9,7 @@ import david from '../../assets/david.jpeg';
 const Three: FC = () => {
   return (
     <div>
-      <h2>Authors</h2>
+      <Heading text="Authors" />
       <div className="flex flex-row flex-wrap">
         <div className="w-full mb-6 md:w-1/2 md:pr-4 xl:w-1/4 xl:mb-0">
           <Author img={adam} name="Adam Wathan" twitterHandle="adamwathan" />

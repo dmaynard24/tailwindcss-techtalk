@@ -1,6 +1,5 @@
 import {FC} from 'react';
 import NavButton from '../NavButton/NavButton';
-import './styles.css';
 
 type Props = {
   onClickPrev: any;
@@ -16,7 +15,7 @@ const Controls: FC<Props> = ({
   isNextDisabled
 }) => {
   return (
-    <div className="controls">
+    <div className="fixed z-10 transform translate-x-1/2 bottom-4 right-1/2 flex p-2 rounded-md bg-white lg:transform-none lg:right-6">
       <NavButton 
         srText="Go to Previous Slide" 
         pathD="M15 19l-7-7 7-7" 
