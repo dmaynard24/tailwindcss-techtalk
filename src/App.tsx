@@ -10,10 +10,13 @@ import Five from './slides/5';
 import Six from './slides/6';
 import Seven from './slides/7';
 import Eight from './slides/8';
+import Nine from './slides/9';
+import Ten from './slides/10';
+import Eleven from './slides/11';
 
 const App = () => {
   const [currentSlideNum, setCurrentSlideNum] = useState(1);
-  const slideCount = 10; // TODO: update
+  const slideCount = 11; // TODO: update
 
   useEffect(() => {
     // scroll back to top on slide change (pretty much only applies to mobile)
@@ -35,7 +38,7 @@ const App = () => {
     }
   }
 
-  const getProgressWidthPercentage = () => `${currentSlideNum / slideCount * 100}%`;
+  const getProgressWidthPercentage = () => `${Math.floor(currentSlideNum / slideCount * 100)}%`;
 
   document.onkeyup = (e: KeyboardEvent) => {
     if (e.key === 'ArrowLeft' || e.key === 'Backspace') {
@@ -50,7 +53,7 @@ const App = () => {
       <ProgressBar 
         width={getProgressWidthPercentage()} />
 
-      <div className="relative z-1 w-full max-w-screen-lg xl:max-w-screen-xl mx-auto py-24 px-4">
+      <div className="container mx-auto py-24 px-4">
         {currentSlideNum === 1 && <One />}
         {currentSlideNum === 2 && <Two />}
         {currentSlideNum === 3 && <Three />}
@@ -59,6 +62,9 @@ const App = () => {
         {currentSlideNum === 6 && <Six />}
         {currentSlideNum === 7 && <Seven />}
         {currentSlideNum === 8 && <Eight />}
+        {currentSlideNum === 9 && <Nine />}
+        {currentSlideNum === 10 && <Ten />}
+        {currentSlideNum === 11 && <Eleven />}
       </div>
 
       <Controls

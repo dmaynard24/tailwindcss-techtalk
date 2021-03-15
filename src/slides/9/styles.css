@@ -1,0 +1,7 @@
+.tailwind-card a {
+  box-shadow: none;
+}
+
+.tailwind-card a:hover {
+  color: white;
+}
