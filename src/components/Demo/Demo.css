@@ -1,0 +1,3 @@
+.demo-component pre {
+  @apply rounded-t-none;
+}

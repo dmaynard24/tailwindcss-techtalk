@@ -1,7 +1,9 @@
 import {useState, useEffect} from 'react';
 import './App.css';
+
 import ProgressBar from './components/ProgressBar/ProgressBar';
 import Controls from './components/Controls/Controls';
+
 import TitleScreen from './slides/TitleScreen/TitleScreen';
 import Outline from './slides/Outline/Outline';
 import Authors from './slides/Authors/Authors';
@@ -18,10 +20,13 @@ import UtilityVsComponent from './slides/UtilityVsComponent/UtilityVsComponent';
 import CommonQuestions from './slides/CommonQuestions/CommonQuestions';
 import ResponsiveExample from './slides/ResponsiveExample/ResponsiveExample';
 import CustomBreakpoints from './slides/CustomBreakpoints/CustomBreakpoints';
+import Stateful from './slides/Stateful/Stateful';
+import Configurable from './slides/Configurable/Configurable';
+import ReferencingConfigValues from './slides/ReferencingConfigValues/ReferencingConfigValues';
 
 const App = () => {
   const [currentSlideNum, setCurrentSlideNum] = useState(1);
-  const slideCount = 20; // TODO: update
+  const slideCount = 19; // TODO: update
 
   useEffect(() => {
     // scroll back to top on slide change (pretty much only applies to mobile)
@@ -74,7 +79,10 @@ const App = () => {
         {currentSlideNum === 13 && <Responsive />}
         {currentSlideNum === 14 && <ResponsiveExample />}
         {currentSlideNum === 15 && <CustomBreakpoints />}
-        {currentSlideNum === 16 && <CommonQuestions />}
+        {currentSlideNum === 16 && <Stateful />}
+        {currentSlideNum === 17 && <Configurable />}
+        {currentSlideNum === 18 && <ReferencingConfigValues />}
+        {currentSlideNum === 19 && <CommonQuestions />}
       </div>
 
       <Controls
