@@ -11,12 +11,15 @@ import BootstrapApproach from './slides/BootstrapApproach/BootstrapApproach';
 import TailwindApproach from './slides/TailwindApproach/TailwindApproach';
 import Responsive from './slides/Responsive/Responsive';
 import UtilityVsComponent from './slides/UtilityVsComponent/UtilityVsComponent';
-import CommonQuestions from './slides/CommonQuestions/CommonQuestions';
 import ResponsiveExample from './slides/ResponsiveExample/ResponsiveExample';
 import CustomBreakpoints from './slides/CustomBreakpoints/CustomBreakpoints';
 import Stateful from './slides/Stateful/Stateful';
 import Configurable from './slides/Configurable/Configurable';
 import ReferencingConfigValues from './slides/ReferencingConfigValues/ReferencingConfigValues';
+import LatestFeatures from './slides/LatestFeatures/LatestFeatures';
+import Optimization from './slides/Optimization/Optimization';
+import CommonQuestions from './slides/CommonQuestions/CommonQuestions';
+import Conclusion from './slides/Conclusion/Conclusion';
 
 const routes = [
   {id: 1, path: '/', component: <TitleScreen />},
@@ -37,7 +40,10 @@ const routes = [
   {id: 16, path: '/stateful', component: <Stateful />},
   {id: 17, path: '/configurable', component: <Configurable />},
   {id: 18, path: '/referencing-config-values', component: <ReferencingConfigValues />},
-  {id: 19, path: '/common-questions', component: <CommonQuestions />},
+  {id: 19, path: '/latest-features', component: <LatestFeatures />},
+  {id: 20, path: '/optimization', component: <Optimization />},
+  {id: 21, path: '/common-questions', component: <CommonQuestions />},
+  {id: 22, path: '/conclusion', component: <Conclusion />},
 ];
 
 export default routes;

@@ -53,7 +53,7 @@ const Controls: FC = () => {
   return (
     <div>
       <ProgressBar width={getProgressWidthPercentage()} />
-      <div className="fixed z-10 transform translate-x-1/2 bottom-4 right-1/2 flex p-2 rounded-md bg-white lg:transform-none lg:right-6">
+      <div className="fixed z-10 transform translate-x-1/2 bottom-4 right-1/2 flex p-2 rounded-md bg-white shadow-xl lg:transform-none lg:right-6 lg:shadow-none">
         <NavButton 
           srText="Go to Previous Slide" 
           pathD="M15 19l-7-7 7-7" 
