@@ -14,6 +14,10 @@ import UtilityFirstExample from './slides/UtilityFirstExample/UtilityFirstExampl
 import BootstrapApproach from './slides/BootstrapApproach/BootstrapApproach';
 import TailwindApproach from './slides/TailwindApproach/TailwindApproach';
 import Responsive from './slides/Responsive/Responsive';
+import UtilityVsComponent from './slides/UtilityVsComponent/UtilityVsComponent';
+import CommonQuestions from './slides/CommonQuestions/CommonQuestions';
+import ResponsiveExample from './slides/ResponsiveExample/ResponsiveExample';
+import CustomBreakpoints from './slides/CustomBreakpoints/CustomBreakpoints';
 
 const App = () => {
   const [currentSlideNum, setCurrentSlideNum] = useState(1);
@@ -66,7 +70,11 @@ const App = () => {
         {currentSlideNum === 9 && <UtilityFirstExample />}
         {currentSlideNum === 10 && <BootstrapApproach />}
         {currentSlideNum === 11 && <TailwindApproach />}
-        {currentSlideNum === 12 && <Responsive />}
+        {currentSlideNum === 12 && <UtilityVsComponent />}
+        {currentSlideNum === 13 && <Responsive />}
+        {currentSlideNum === 14 && <ResponsiveExample />}
+        {currentSlideNum === 15 && <CustomBreakpoints />}
+        {currentSlideNum === 16 && <CommonQuestions />}
       </div>
 
       <Controls

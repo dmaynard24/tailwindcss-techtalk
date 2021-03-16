@@ -41,7 +41,19 @@ a {
   box-shadow: inset 0 -0.125em 0 0 #fff, inset 0 -0.375em 0 0 rgb(165 243 252 / 40%);
 }
 
+.tailwind-card a {
+  box-shadow: none;
+}
+
+.tailwind-card a:hover {
+  color: white;
+}
+
+/* overriding Prism inline styles */
 pre {
+  @apply rounded-md;
   overflow: hidden !important;
   margin: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }

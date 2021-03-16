@@ -3,10 +3,9 @@
   margin-left: -27px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: theme(screens.lg)) {
   .book-cover {
-    width: 100%;
-    max-width: 256px;
-    margin-left: 16px;
+    @apply w-full ml-4;
+    max-width: 16rem;
   }
 }

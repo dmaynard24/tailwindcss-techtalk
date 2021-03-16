@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import './styles.css';
+import './Author.css';
 
 type Props = {
   img: string;

@@ -1,4 +1,4 @@
-@media (min-width: 640px) {
+@media (min-width: theme(screens.sm)) {
   .rounded-image {
     width: 60px;
     height: 60px;

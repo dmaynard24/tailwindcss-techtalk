@@ -10,6 +10,13 @@ module.exports = {
       cyan: colors.cyan,
       blue: colors.blue,
     },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1440px',
+    },
     extend: {
       colors: {
         'tailwind-blue': '#3cb6d4'

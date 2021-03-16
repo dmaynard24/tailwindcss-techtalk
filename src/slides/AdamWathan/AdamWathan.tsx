@@ -8,7 +8,7 @@ const AdamWathan: FC = () => {
     <div>
       <Heading text="About Adam Wathan" size="h3" />
       <Author img={adam} name="Adam Wathan" twitterHandle="adamwathan" />
-      <p className="mt-6 max-w-xl">
+      <p className="mt-6 max-w-2xl">
         <a href="https://adamwathan.me/" target="_blank" rel="noreferrer">Adam</a> is a full-stack developer and entrepreneur who released <a href="https://adamwathan.me/the-book-launch-that-let-me-quit-my-job/" target="_blank" rel="noreferrer">his first book</a> in 2016 and left his job to pursue open source development full-time.
       </p>
     </div>
